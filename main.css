@@ -1,0 +1,715 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:  rgb(1, 2, 20);
+}
+.all-body{
+    margin: auto;
+}
+
+.hero-sec{
+    margin: auto;
+    width: auto;
+    height: 800px;
+    /* background: url(./image/background\ hero.png); */
+    background-repeat: no-repeat;
+    /* margin-left: 300px;
+    margin-right: 300px; */
+
+}
+.blurr{
+    position: absolute;
+
+}
+.logo{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    margin-left: 100px;
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+}
+.navgation{
+    justify-content: space-between;
+    padding: 0 200px;
+    width: auto;
+    height: 100px;
+    background-color:transparent;
+    display: flex;
+    border-bottom: 1px solid rgb(222, 222, 222);
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #4B2AEB;
+}
+
+@media (max-width:700px) {
+    .hamburger{
+        display: block;
+    }
+    
+}
+
+
+
+
+
+
+
+
+.btn1{
+    
+        width: 198px;
+        height: 50px;
+        color: aliceblue;
+        /* background-color: rgb(128, 97, 249); */
+        background-color: transparent;
+        border-radius: 22px;
+        border: 2px solid white;
+        font-size: 16px;
+        margin-top: 20px;
+        margin-right: 190px;
+        
+    
+    }
+
+.Logo{
+    width: 170px;
+    height: 89px;
+    object-fit: contain ;
+    margin-left:90px;
+    color: aliceblue;
+}
+
+nav{
+    display: flex;
+
+}
+.nai:hover{
+    color: #844BEC;
+    font-weight: 500;
+   transition: 0.2s;
+
+}
+nav a{
+    font-size: 19px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin-right: 15px;
+    text-decoration: none;
+    margin-top: 36px;
+    
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
+    line-height: 1.2;
+
+}
+.main h1{
+    color: aliceblue;
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.main p{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 1.6;
+    
+    
+}
+.main button{
+    width: 198px;
+    height: 50px;
+    color: aliceblue;
+    background-color: rgb(128, 97, 249);
+    border-radius: 22px;
+    border: none;
+    font-size: 16px;
+    margin-top: 40px;
+    
+
+}
+
+/* about us section start */
+
+.about{
+    justify-content: center;
+    margin: auto;
+    gap: 100PX;
+    display: flex;
+    width: 1440px;
+    height: 610px;
+    background-color: transparent;
+
+
+}
+.image{
+    margin-top: 100PX;
+}
+.image h1{
+    font-size: 16px;
+    font-weight: 600;
+    color:rgb(128, 97, 249) ;
+    
+
+}
+.image h2{
+    font-size: 64px;
+    font-weight: bold;
+    color:rgb(255, 255, 255) ;
+    
+
+}
+.text{
+    margin-top: 100px;
+}
+.text p{
+
+ font-size: 18px;
+    font-weight: 300;
+    color:rgb(255, 255, 255);
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+.blur{
+    width: 300px;
+    height: 300px;
+    background-color:rgb(128, 97, 249);
+    filter: blur(140px); /* Adjust the value to increase/decrease the blur effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 60%;
+    margin-left: 290px;
+    margin-bottom: 200px;
+    text-align: center;
+}
+/* rate section start */
+.rate{
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    height: 300px;
+    background-color: transparent;
+    gap: 10px;
+    align-items: center;
+    margin: auto;
+
+
+
+}
+.kk{
+    width: 25%;
+}
+.kk h1{
+    font-size:64px ;
+    color:rgb(128, 97, 249) ;
+    text-align: center;
+
+}
+.kk h2{
+    font-size:16px ;
+    font-weight: 200;
+    color:rgb(255, 255, 255) ;
+    text-align: center;
+
+}
+
+/* loops animation */
+@keyframes slide {
+    from{ transform: translateX(0);}
+    to{transform: translateX(-100%);}
+    
+}
+.logos:hover .slider-logos{
+    animation-play-state: paused;
+}
+.logos{
+    padding: 60px 0px;
+   
+    white-space: nowrap;
+    overflow: hidden;
+    background-color:#060719;
+    
+   margin-top: -50px;
+   max-width:   auto;
+   margin: auto;
+
+}
+.logos{
+    background-color: #060719;
+       
+
+}
+.slider-logos{
+    animation:  10s slide infinite ease-out;
+    transition: 10s;
+    display: inline-block;
+   
+    background-color: #060719;
+    /* filter: blur(10px); */
+    
+}
+
+.slider-logos img{
+    width: 15%;
+    padding: auto;
+
+    aspect-ratio: 3/2;
+    object-fit: contain;
+  
+    margin: 0 40px;
+
+
+}
+
+
+/* js react div stary */
+.js{
+    margin-top: 250px;
+    margin: auto;
+    width: auto;
+    height: 1000px;
+
+}
+.js h4{
+    font-size: 66px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+   margin-left: 650px;
+    margin-bottom: 100px;
+}
+.des{
+    
+    width: 1440px;
+    height: 100px;
+    border-bottom: 1px solid white;
+  
+    display: flex;
+    justify-items: center;
+   text-align: center;
+   margin-left: 300px;
+    margin-bottom: 50px;
+
+}
+.des h1{
+    font-size: 16px;
+    color: aliceblue;
+    font-weight: 200;
+    margin-top: 35px;
+
+}
+
+.des h2{
+    font-size: 50px;
+    color: aliceblue;
+    font-weight: 500;
+    margin-left: 100px;
+
+}
+ .des img{
+    position: absolute;
+    margin-left: 700px;
+    margin-top: -50px;
+
+    visibility: hidden;
+   
+    opacity: 30%;
+    
+   
+    height: 25%;
+    object-fit: cover;
+   
+    z-index: 999;
+ }
+.des:hover h2,h1  {
+    color: rgba(164, 164, 164, 0.698);
+    transition: 0.5s linear;
+    visibility: visible;
+}
+.des:hover img{
+    visibility: visible;
+    
+    transition: 1s linear;
+    opacity: 100%;
+    animation-play-state: running;
+}
+
+
+
+/* second hero image section css write here  */
+.con{
+    width: auto;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 100px;
+    gap: 20px;
+    margin-top: -100px;
+}
+.con img{
+    width: 30%;
+}
+
+
+/* card section start now  */
+.cs-card{
+    max-width: auto;
+    height: 1200px;
+    margin: auto;
+    
+    background-color: #060719;
+}
+.ss{
+    margin: auto;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 600;
+    color: white;
+   margin-top: 50px;
+   margin-left: 100px;
+   margin-bottom: 90px;
+}
+.card{
+    width: 390px;
+    height: 390px;
+    border: 1px solid rgb(81, 81, 81);
+    padding: 45px;
+    cursor: pointer;           /* Change cursor to pointer on hover */
+    transition: background-color 1.3s ease, transform 0.3s ease;
+
+     
+}
+.card:hover {
+    transform: scale(1.05);
+   
+    background: linear-gradient(to right bottom, #4B2AEB, #844BEC, #060719);
+    
+}
+.card h1{
+    font-size: 24px;
+    font-weight: 300;
+    color: aliceblue;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.card p{
+    font-size: 18px;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    line-height: 1.6;
+    
+}
+.card img{
+    margin-top: 30px;
+}
+.flex{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.cs-card button{
+    margin-top: 70px;
+   font-size: 18px;
+   color: #ffffff;
+
+      position: absolute;
+width: 187.71px;
+height: 50.28px;
+margin-left: 900px;
+
+background: linear-gradient(273.23deg, #4B2AEB -1.78%, #844BEC 99.6%);
+border: none;
+border-radius:20px ;
+
+
+
+    
+
+}
+/* new grid section is start */
+.grid
+{
+    width: auto;
+    margin: auto;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+
+}
+.fuck{
+    margin-bottom: 100px;
+}
+.fuck h1{
+    font-size: 53px;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+}
+.fuck p{
+    font-size: 16px;
+    line-height: 2;
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 60px;
+
+}
+.inside{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.inside h3{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 7px;
+}
+
+.inside p{
+    margin-top: 7px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #a8a8a8;
+    margin-bottom: 7px;
+    line-height: 1.3;
+}
+.fuck button{
+    margin-top: 70px;
+    font-size: 18px;
+    color: #ffffff;
+ 
+       position: absolute;
+ width: 187.71px;
+ height: 50.28px;
+ margin-left: 00px;
+ 
+ background: linear-gradient(273.23deg, #4B2AEB -1.78%, #844BEC 99.6%);
+ border: none;
+ border-radius:20px ;
+}
+
+/* second section start  */
+.pop{
+    height: 550px;
+    width: auto;
+    margin: auto;
+    border-top: 1px solid rgb(139, 139, 139);
+    border-bottom: 1px solid rgb(139, 139, 139);
+    
+}
+
+
+.pop h1{
+    text-align: center;
+   font-size: 46px;
+   margin-top: 100px;
+   font-weight: 500;
+   line-height: 1.2;
+
+}
+.pop h2{
+    margin-top: 50px;
+    text-align: center;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 1.6;
+   color: #ffffff;
+
+}
+.pop button{
+    margin-top: 40px;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+ 
+       position: absolute;
+ width: 187.71px;
+ height: 50.28px;
+ margin-left: 850px;
+ 
+ background: linear-gradient(273.23deg, #4B2AEB -1%, #844BEC 99.6%);
+ border: none;
+ border-radius:20px ;
+}
+
+/*  all blur affect is here */
+.bb{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgb(128, 97, 249);
+    filter: blur(160.28px);
+    margin-left: 1400px;
+    /* margin-top: 200px; */
+}
+.b{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgb(128, 97, 249);
+    filter: blur(180.28px);
+    margin-left: 300px;
+    margin-top: -700px;
+}
+.x{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgb(128, 97, 249);
+    filter: blur(180.28px);
+    margin-left: 200px;
+    margin-top:-50px;
+}
+/* and here popi */
+
+/*  star image set here bro of second last section */
+.star{
+    margin-top: 70px;
+    position: absolute;
+    margin-left: 1500px;
+}
+.sta{
+    position: absolute;
+    margin-left: 1400px;
+}
+
+.st{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 300px;
+  
+}
+
+.s{
+    position: absolute;
+    margin-left: 400px;
+}
+
+
+
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 420px;
+    background-color: transparent;
+    padding: 100px 250px;
+
+}
+
+.loo p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    font-weight: 400;
+
+}
+.loo h1{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+li{
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px;
+    text-decoration: none;
+
+}
+.one h1{
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 18px;    
+
+}
+.one p{
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 18px;   
+}
+
+.aa{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: -50px;
+}
+.qq{
+    font-size: 15px;
+    color: rgb(139, 139, 139);
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+input{
+    width: 405px;
+    height: 55px;
+    border-radius: 8px;
+    border: 1px solid rgb(179, 179, 179);
+    padding-left: 20px;
+    background-color: transparent;
+    font-size: 18px;
+    margin-top: 10px;
+    color: white;
+}
+form button{
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid rgb(126, 126, 126);
+    margin-left:-60px;
+    margin-top: 15px;
+}
+
+
+
+

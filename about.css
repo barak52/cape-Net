@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:  rgb(1, 2, 20);
+}
+.all-body{
+    margin: auto;
+}
+
+.logo{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    margin-left: 300px;
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+}
+.navgation{
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color:transparent;
+    display: flex;
+    border-bottom: 1px solid rgb(222, 222, 222);
+}
+
+.Logo{
+    width: 170px;
+    height: 89px;
+    object-fit: contain ;
+    margin-left:90px;
+    color: aliceblue;
+
+}
+
+nav{
+    display: flex;
+    margin-left: 500px;
+
+}
+.nai:hover{
+    color: #844BEC;
+    font-weight: 500;
+   transition: 0.2s;
+
+}
+nav a{
+    font-size: 19px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin-right: 15px;
+    text-decoration: none;
+    margin-top: 36px;
+    
+}
+
+
+
+
+
+
+
+
+/* hero section */
+.grid
+{
+    width: auto;
+    margin: auto;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 150px;
+
+}
+.fuck{
+    margin-bottom: 100px;
+}
+.fuck h1{
+    font-size: 73px;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+}
+.fuck p{
+    font-size: 19px;
+    line-height: 2;
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 50px;
+
+}
+.inside{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.inside h3{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 7px;
+}
+
+.inside p{
+    margin-top: 7px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #a8a8a8;
+    margin-bottom: 7px;
+    line-height: 1.3;
+}
+.fuck button{
+    margin-top: 0px;
+    font-size: 18px;
+    color: #ffffff;
+ 
+       position: absolute;
+ width: 187.71px;
+ height: 50.28px;
+ margin-left: 00px;
+ 
+ /* background: linear-gradient(273.23deg, #4B2AEB -1.78%, #844BEC 99.6%); */
+ background-color: #844BEC;
+ border: none;
+ border-radius:0px ;
+}
+.pic{
+    margin-top: 140px;
+   display: flex;
+   justify-content: start;
+   gap: 30px;
+}
+
+
+
+
+
+/* loops animation */
+@keyframes slide {
+    from{ transform: translateX(0);}
+    to{transform: translateX(-100%);}
+    
+}
+.logos:hover .slider-logos{
+    animation-play-state: paused;
+}
+.logos{
+    padding: 30px 0px;
+   
+    white-space: nowrap;
+    overflow: hidden;
+    background-color:#060719;
+    
+   margin-top: -50px;
+   max-width:   auto;
+   margin: auto;
+
+}
+.logos{
+    background-color: #060719;
+       
+
+}
+.slider-logos{
+    animation:  10s slide infinite ease-out;
+    transition: 10s;
+    display: inline-block;
+   
+    background-color: #060719;
+    /* filter: blur(10px); */
+    
+}
+
+.slider-logos img{
+    width: 12%;
+    padding: auto;
+
+    aspect-ratio: 3/2;
+    object-fit: contain;
+  
+    margin: 0 40px;
+
+
+}
+
+
+/* card section start now  */
+.cs-card{
+    max-width: auto;
+    height: 1000px;
+    margin: auto;
+    
+    background-color: #ececec00;
+    margin-bottom: -100px;
+}
+.ss{
+    margin: auto;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 600;
+    color: white;
+   margin-top: 50px;
+   margin-left: 100px;
+   margin-bottom: 90px;
+}
+.card{
+    width: 390px;
+    height: 390px;
+    border: 1px solid rgb(81, 81, 81);
+    padding: 45px;
+    cursor: pointer;           /* Change cursor to pointer on hover */
+    transition: background-color 1.3s ease, transform 0.3s ease;
+
+     
+}
+.card:hover {
+    transform: scale(1.05);
+   
+    background: linear-gradient(to right bottom, #4B2AEB, #844BEC, #060719);
+    
+}
+.card h1{
+    font-size: 24px;
+    font-weight: 300;
+    color: aliceblue;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.card p{
+    font-size: 16px;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    line-height: 1.6;
+    
+}
+.card img{
+    margin-top: 30px;
+}
+.flex{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2
+0px;
+    margin-bottom: 20px;
+}
+.cs-card button{
+    margin-top: 70px;
+   font-size: 18px;
+   color: #ffffff;
+
+      position: absolute;
+width: 187.71px;
+height: 50.28px;
+margin-left: 900px;
+
+background: linear-gradient(273.23deg, #4B2AEB -1.78%, #844BEC 99.6%);
+border: none;
+border-radius:20px ;
+
+
+
+    
+
+}
+
+/* FAQ */
+
+.flex{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top:  -100px  ;
+}
+
+#accordion{
+    margin: 150px auto;
+   width: 600px;
+}
+#accordion li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 20px;
+    background: #0E0E0E;
+    padding: 20px;
+    border: 1px solid #a8a8a8;
+    border-radius: 4px;
+}
+#accordion li label{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px ;
+    font-weight: 500;
+    cursor: pointer;
+}
+#accordion li label span{
+    transform: rotate(90deg);
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+}
+
+#accordion label+input[type="radio"]{
+    display: none;
+}
+#accordion .content{
+    padding:  0 10px;
+    line-height: 26px;
+    max-height:0 ;
+    overflow: hidden;
+    transition: max-height 0.6s;
+}
+p{
+    opacity: 60%;
+}
+#accordion label+input[type="radio"]:checked+ .content{
+    max-height:400px ;
+}
+
+h1{
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 500;
+    /* text-align: center; */
+    margin-bottom: 10px;
+}
+.head{
+    /* background-color: antiquewhite; */
+    justify-content: space-around;
+    display: flex;
+    width: 30%;
+    margin: auto;
+    flex-direction: column;
+}
+
+h2{
+
+    color: #ffffff;
+    font-size: 50px;
+    /* margin-top: 420px; */
+    font-weight: 700;
+    /* margin-top: 300px; */
+    /* margin-bottom: 400px; */
+}
+.pp{
+    margin-top: 10px;
+    margin-bottom: 400px;
+    line-height: 1.3;
+    font-size: 18px;
+    font-weight: 400;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    
+}
+
+a{
+    color: #ffffff;
+
+}
+
+.content p{
+    color: #ffffff;
+}
+label{
+    color: #ffffff;
+}
+.head{
+    width: 50%;
+}
+.head h1{
+    font-size: 30px;
+}
+.head h2{
+    font-size: 60px;
+}
+.head p{
+    font-size: 20px;
+    color: #a8a8a8;
+}
+.head span{
+    color: #4B2AEB;
+}
+
+
+
+
+/* footer */
+footer{
+    border-top: 1px solid #a8a8a8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 420px;
+    background-color: transparent;
+    padding: 100px 250px;
+
+}
+
+.loo p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    font-weight: 400;
+
+}
+.loo h1{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+li{
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px;
+    text-decoration: none;
+
+}
+.one h1{
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 18px;    
+
+}
+.one p{
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 18px;   
+}
+
+.aa{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: -50px;
+}
+.qq{
+    font-size: 15px;
+    color: rgb(139, 139, 139);
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+input{
+    width: 405px;
+    height: 55px;
+    border-radius: 8px;
+    border: 1px solid rgb(179, 179, 179);
+    padding-left: 20px;
+    background-color: transparent;
+    font-size: 18px;
+    margin-top: 10px;
+    color: white;
+}
+form button{
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid rgb(126, 126, 126);
+    margin-left:-60px;
+    margin-top: 15px;
+}
